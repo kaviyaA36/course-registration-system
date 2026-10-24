@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register a Course</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #111827, #312e81);
+            text-align: center;
+            padding: 40px 15px;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #fde047;
+        }
+
+        form {
+            background: white;
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            box-sizing: border-box;
+            border-radius: 6px;
+        }
+
+        input, select {
+            border: 1px solid #cbd5e1;
+        }
+
+        button {
+            background: #16a34a;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #166534;
+        }
+
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Register for an Exciting Course</h1>
+
+    <form id="registrationForm">
+        <label for="name">Student Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="emailId">Email ID</label>
+        <input type="email" id="emailId" name="emailId" required>
+
+        <label for="courseName">Choose a Course</label>
+        <select id="courseName" name="courseName" required>
+            <option value="Java Essentials">Java Essentials</option>
+            <option value="Python for ML">Python for ML</option>
+            <option value="Spring Boot">Spring Boot</option>
+        </select>
+
+        <button type="submit">Submit Registration</button>
+
+        <p id="message" role="status"></p>
+    </form>
+
+    <a href="index.html">Back to Home</a>
+
+    <script src="myscript.js"></script>
+</body>
+</html>

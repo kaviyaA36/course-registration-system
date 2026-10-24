@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrolled Students</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            padding: 35px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #312e81;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            max-width: 850px;
+            margin: 25px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 14px;
+        }
+
+        th {
+            background: #0891b2;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #cffafe;
+        }
+
+        a {
+            color: #0e7490;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Enrolled Students</h1>
+
+    <p id="message" role="status">Loading students...</p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email ID</th>
+                    <th>Course Name</th>
+                </tr>
+            </thead>
+
+            <tbody id="enrolledtable"></tbody>
+        </table>
+    </div>
+
+    <p><a href="index.html">Back to Home</a></p>
+
+    <script src="myscript.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", showEnrolledStudents);
+    </script>
+</body>
+</html>
